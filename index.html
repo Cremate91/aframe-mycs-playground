@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Composite</title>
+    <meta name="description" content="Composite — A-Frame">
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <img id="lake" src="lake.jpg">
+        <img id="pdx" src="portland.png">
+        <img id="samples" src="samples.jpg">
+        <a-asset-item id="sculpture" src="sculpture.dae"></a-asset-item>
+        <a-asset-item id="table" src="table.dae"></a-asset-item>
+        <a-asset-item id="box" src="box.dae"></a-asset-item>
+        <a-asset-item id="test" src="torsudae.dae"></a-asset-item>
+    </a-assets>
+
+    <a-sky src="#samples"></a-sky>
+    <a-collada-model src="#test" position="0 0 -3"></a-collada-model>
+    <a-image src="#samples" width="10" height="5" position="2 1 -6"
+             scale="0.2 0.2 0.2"></a-image>
+</a-scene>
+</body>
+</html>
+
