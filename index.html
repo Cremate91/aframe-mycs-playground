@@ -10,11 +10,15 @@
 <a-scene>
     <a-assets>
         <img id="samples" src="img/samples.jpg">
-        <a-asset-item id="test" src="assets/torsudae.dae"></a-asset-item>
+        <a-asset-item id="donat" src="assets/torsudae.dae"></a-asset-item>
+        <a-asset-item id="table" src="assets/table.dae"></a-asset-item>
     </a-assets>
 
     <a-sky src="#samples"></a-sky>
-    <a-collada-model src="#test" position="0 0 -3"></a-collada-model>
+    <a-entity light="color: #AFA; intensity: 1.5" position="-1 1 2"></a-entity>
+    <a-entity rotation="-90 0 0" position="0 -2 -4" geometry="primitive: plane; height: 10; width: 10" material="side: double"></a-entity>
+    <a-collada-model src="#donat" position="0 0 -6"></a-collada-model>
+    <a-collada-model src="#table" position="0 0 -4"></a-collada-model>
 </a-scene>
 </body>
 </html>
